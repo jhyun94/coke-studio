@@ -16,23 +16,26 @@ html,body {
 
 .box {
   display: inline-block;
-  margin-top: 20px;
   list-style-type: none;
+  margin-top: 40px;
 }
 
 .box li {
-  margin-bottom: 20px;
-  border: 1px solid black;
-  padding-right: 40px;
+  font-size: 24px;
 }
 
-
+.box li:hover {
+  background-color:#EDEDED;
+}
 
 .img {
   height: 120px;
   padding-right: 10px;
 }
 
+.cover {
+  width: 500px;
+  height: 400px;
+}
 .media-player {
-  border: 1px solid black;
 }

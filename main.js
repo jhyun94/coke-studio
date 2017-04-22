@@ -1,5 +1,19 @@
 listSongs();
 
+$("body").on("click", ".link", function(){
+  event.preventDefault();
+  var url = $(this).attr("href");
+  var image = $(this).parent().parent().find(".img").attr("src");
+  $(".media-player").empty();
+  $(".media-player").append(playsong(url, image));
+})
+
+
+
+
+
+
+// functions for listing songs
 function listSongs(){
   $.ajax({
     type: "GET",
@@ -19,8 +33,16 @@ function displayAllSongs(data){
 function songBox(obj){
   return `<li> \
             <img src="${obj.cover_image}" class="img-responsive img"/> \
-            <p>Song: ${obj.song}</p> \
-            <p>Artist: ${obj.artists}</p> \
-            <a href="${obj.url}">Click to Play</a> \
+            <p>${obj.song} - ${obj.artists} \
+            <a href="${obj.url}" class="link"><i class="fa fa-play" aria-hidden="true"></i></a> </p> \
           </li>`
+}
+
+// audio player
+
+function playsong(url, image){
+ return `<img src="${image}" class="img-responsive cover"/> \
+        <audio controls autoplay> \
+          <source src="${url}"> \
+        </audio>`
 }
