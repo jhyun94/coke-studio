@@ -5,6 +5,7 @@ html,body {
   padding: 0;
 }
 
+
 .header {
   background-color: #1CDFF2;
 }
@@ -15,12 +16,23 @@ html,body {
 
 .box {
   display: inline-block;
-  border: 1px solid black;
   margin-top: 20px;
+  list-style-type: none;
+}
+
+.box li {
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding-right: 40px;
 }
 
 
 
 .img {
-  height: 100px;
+  height: 120px;
+  padding-right: 10px;
+}
+
+.media-player {
+  border: 1px solid black;
 }

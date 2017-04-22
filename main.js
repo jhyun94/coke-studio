@@ -10,12 +10,17 @@ function listSongs(){
 }
 
 function displayAllSongs(data){
-  // $(".box").empty();
+  $(".box").empty();
   data.forEach(function(obj){
-    songBox(obj);
+    $(".box").append(songBox(obj));
   })
 }
 
 function songBox(obj){
-  console.log(obj);
+  return `<li> \
+            <img src="${obj.cover_image}" class="img-responsive img"/> \
+            <p>Song: ${obj.song}</p> \
+            <p>Artist: ${obj.artists}</p> \
+            <a href="${obj.url}">Click to Play</a> \
+          </li>`
 }
