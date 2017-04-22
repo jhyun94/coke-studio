@@ -1,0 +1,26 @@
+/* general
+======== */
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #1CDFF2;
+}
+
+.white {
+  color: #fff;
+}
+
+.box {
+  display: inline-block;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+
+
+.img {
+  height: 100px;
+}
