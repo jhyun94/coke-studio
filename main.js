@@ -1,5 +1,6 @@
 listSongs();
 var favorites = [];
+
 // events for playing audio
 $("body").on("click", ".link", function(){
   event.preventDefault();
@@ -28,8 +29,6 @@ $("#all").on("click", function(){
 $("#favorites").on("click", function(){
   listFavorites();
 })
-
-
 
 
 // listing songs

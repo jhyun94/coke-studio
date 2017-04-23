@@ -20,6 +20,19 @@ html,body {
 }
 /* filtering div 
 ======== */
+.filter-by {
+  display: inline;
+}
+.filters {
+  display: inline;
+  list-style-type: none;
+}
+
+.filters li {
+  display: inline-block;
+  padding-right: 20px;
+  text-decoration: underline;
+}
 .filters li:hover {
   cursor: pointer;
 }
