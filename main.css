@@ -1,0 +1,72 @@
+/* general
+======== */
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.white {
+  color: #fff;
+}
+/* header div
+======= */
+.header {
+  background-color: #1CDFF2;
+}
+/* filtering div 
+======== */
+.filter-by {
+  display: inline;
+}
+.filters {
+  display: inline;
+  list-style-type: none;
+}
+
+.filters li {
+  display: inline-block;
+  padding-right: 20px;
+  text-decoration: underline;
+}
+.filters li:hover {
+  cursor: pointer;
+}
+
+/* displaying songs
+======== */
+
+.box {
+  display: inline-block;
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.box li {
+  font-size: 22px;
+}
+
+.box li:hover {
+  background-color:#EDEDED;
+}
+
+.img {
+  width: 160px;
+  height: 120px;
+  padding-right: 10px;
+}
+
+.favorite {
+  color: yellow;
+}
+
+/* playing audio
+======= */
+.cover {
+  width: 500px;
+  height: 400px;
+}
