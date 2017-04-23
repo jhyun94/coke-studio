@@ -5,14 +5,27 @@ html,body {
   padding: 0;
 }
 
-
-.header {
-  background-color: #1CDFF2;
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .white {
   color: #fff;
 }
+/* header div
+======= */
+.header {
+  background-color: #1CDFF2;
+}
+/* filtering div 
+======== */
+.filters li:hover {
+  cursor: pointer;
+}
+
+/* displaying songs
+======== */
 
 .box {
   display: inline-block;
@@ -21,7 +34,7 @@ html,body {
 }
 
 .box li {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .box li:hover {
@@ -29,13 +42,18 @@ html,body {
 }
 
 .img {
+  width: 160px;
   height: 120px;
   padding-right: 10px;
 }
 
+.favorite {
+  color: yellow;
+}
+
+/* playing audio
+======= */
 .cover {
   width: 500px;
   height: 400px;
-}
-.media-player {
 }
